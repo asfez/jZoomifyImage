@@ -31,6 +31,20 @@
             var width = jme.data("width") || self.options.width;
             var height = jme.data("height") || self.options.height;
             
+            if (!width || !height) {
+	            
+                var xmlrequest = OpenLayers.Request.GET({
+	                url: url + "/imageproperties.xml",
+	                async: false
+	            });		
+
+	            var xmldoc = xmlrequest.responseXML.getElementsByTagName('IMAGE_PROPERTIES');
+	            if(!width)
+                    width = xmldoc[0].getAttribute('WIDTH');
+                if(!height)
+                    height = xmldoc[0].getAttribute('HEIGHT');
+            }  
+
             self.zoomify = new OpenLayers.Layer.Zoomify("Zoomify", url,
 		  	    new OpenLayers.Size(width, height));
 
