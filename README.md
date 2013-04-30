@@ -9,8 +9,12 @@ $("#targetDiv").jZoomifyImage({
       height: image.height
   });
   
-  
-  To create your zoomify tiles you can use either 
+  image.width / height : full size dimension of the image.
+
+Resources
+=============
+
+To create your zoomify tiles you can use either 
   
   - Zoomify express : http://www.zoomify.com/express.htm
   - Zoomify Image : http://sourceforge.net/projects/zoomifyimage/
