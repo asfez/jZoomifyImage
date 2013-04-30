@@ -3,7 +3,7 @@ jZoomifyImage
 
 A jquery plugin to display a zoomify image with the library OpenLayers. 
 - Responsive
-- Autozoom to adapt the image size to the contanier size.
+- Autozoom to adapt the image size to the container size.
 - Setup a minimal zoom to prevent the image to be to small.
 
 
