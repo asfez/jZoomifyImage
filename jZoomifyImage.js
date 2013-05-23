@@ -1,8 +1,7 @@
 ﻿/*!
-* jQuery image
-* Original author: @ajpiano
-* Further changes, comments: @addyosmani
-* Licensed under the MIT license
+* jZoomifyImage
+* Original author: asfez
+* Free to use.
 */
 
 ; (function ($, window, document, undefined) {

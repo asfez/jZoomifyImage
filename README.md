@@ -9,11 +9,11 @@ A jquery plugin to display a zoomify image with the library OpenLayers.
 
 $("#targetDiv").jZoomifyImage({
       url: zoomifyImageUrl,
-      width: image.width,
-      height: image.height
+      [width: image.width,]
+      [height: image.height]
   });
   
-  image.width / height : full size dimension of the image.
+  image.width / height : full size dimension of the image. If not provided, loaded from the ImagesProperties.xml.
 
 Resources
 =============
